@@ -15,4 +15,8 @@ public class AnimalReport
     public string? PhotoBase64 { get; set; }
 
     public DateTime UploadTime { get; set; }
+
+    public double Latitude { get; set; }
+
+    public double Longitude { get; set; }
 }

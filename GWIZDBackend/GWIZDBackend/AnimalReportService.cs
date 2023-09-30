@@ -12,6 +12,8 @@ public class AnimalReportService
 
     public async Task SendAnimalReport(AnimalReport animalReport)
     {
+        DateTime now = DateTime.Now;
+        animalReport.UploadTime = now;
         await mongoService.CreateReportAsync(animalReport);
     }
 
