@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.esri.arcgis-maps-sdk": "file:C:/Users/Kamil/Downloads/arcgis-maps-sdk-unity-1.3.0.tgz",
     "com.unity.collab-proxy": "1.17.6",
     "com.unity.feature.ar": "1.0.0",
     "com.unity.feature.development": "1.0.1",

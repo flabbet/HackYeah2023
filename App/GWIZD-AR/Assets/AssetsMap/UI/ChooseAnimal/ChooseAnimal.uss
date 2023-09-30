@@ -1,0 +1,25 @@
+.AnimalRow {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+.AnimalItem {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 75px;
+    height: 75px;
+    background-color: rgba(126, 217, 87, 255);
+}
+
+.AnimalContainer {
+    justify-content: center;
+    align-items: center;
+}
+
+.AnimalLabel {
+    border-top-width: 5px;
+}

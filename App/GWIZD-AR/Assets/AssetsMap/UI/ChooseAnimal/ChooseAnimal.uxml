@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/ChooseAnimal/ChooseAnimal.uss?fileID=7433441132597879392&amp;guid=302e2cd0be0cf0e48a822fe685012e12&amp;type=3#ChooseAnimal" />
+    <ui:VisualElement style="width: 100%; height: 100%; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px; background-color: rgb(255, 255, 255); justify-content: space-between; min-height: auto; min-width: auto;">
+        <ui:VisualElement name="TopBar" style="flex-wrap: nowrap; flex-direction: row;">
+            <ui:VisualElement name="BackIcon" style="background-image: url(&apos;project://database/Assets/Images/Icons/Icons8/icons8-back-50.png?fileID=2800000&amp;guid=00405778a066bf6488d8383d9b174a7f&amp;type=3#icons8-back-50&apos;); width: 10px; height: 10px; font-size: 12px;" />
+            <ui:Label tabindex="-1" text="POWRÓT" display-tooltip-when-elided="true" name="BackText" style="font-size: 7px; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="Jakie zwierze chcesz zgłosić!" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 13px; -unity-font-style: bold;" />
+        <ui:VisualElement name="OptionsContainer">
+            <ui:VisualElement name="AnimalRow" class="AnimalRow">
+                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
+                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
+                        <ui:VisualElement name="AnimalImage" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
+                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
+                        <ui:VisualElement name="AnimalImage" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="AnimalRow" class="AnimalRow">
+                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
+                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
+                        <ui:VisualElement name="AnimalImage" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
+                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
+                        <ui:VisualElement name="AnimalImage" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="AnimalRow" class="AnimalRow">
+                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
+                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
+                        <ui:VisualElement name="AnimalImage" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
+                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
+                        <ui:VisualElement name="AnimalImage" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
