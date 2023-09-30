@@ -12,7 +12,7 @@ public class AnimalReport
 
     public string AnimalId { get; set; } = null!;
 
-    public ObjectId? PhotoId { get; set; }
+    public string? PhotoBase64 { get; set; }
 
     public DateTime UploadTime { get; set; }
 }

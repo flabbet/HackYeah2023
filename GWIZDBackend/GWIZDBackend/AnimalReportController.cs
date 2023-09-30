@@ -16,10 +16,8 @@ public class AnimalReportController : Controller
 
     [HttpPut]
     [Route("animal-report")]
-    public async Task<IActionResult> Post([FromBody] AnimalReport animalReport, [FromForm] IFormFile photo)
+    public async Task<IActionResult> Post([FromBody] AnimalReport animalReport)
     {
-        ObjectId photoId = await _reportService.UploadPhoto(photo);
-        animalReport.PhotoId = photoId;
         await _reportService.SendAnimalReport(animalReport);
         return Ok();
     }

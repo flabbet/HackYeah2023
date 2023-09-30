@@ -19,9 +19,4 @@ public class AnimalReportService
     {
         return await mongoService.GetAsync();
     }
-
-    public async Task<ObjectId> UploadPhoto(IFormFile photo)
-    {
-        return await mongoService.UploadPhotoAsync(photo);
-    }
 }
