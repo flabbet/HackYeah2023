@@ -10,9 +10,9 @@ public class AnimalReport
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
-    public string animalId { get; set; } = null!;
+    public string AnimalId { get; set; } = null!;
 
-    public ObjectId? photoId { get; set; }
+    public ObjectId? PhotoId { get; set; }
 
     public DateTime UploadTime { get; set; }
 }

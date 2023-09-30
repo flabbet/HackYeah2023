@@ -1,3 +1,5 @@
+using MongoDB.Bson;
+
 namespace GWIZDBackend;
 
 public class AnimalReportService
@@ -16,5 +18,10 @@ public class AnimalReportService
     public async Task<object?> GetAllReports()
     {
         return await mongoService.GetAsync();
+    }
+
+    public async Task<ObjectId> UploadPhoto(IFormFile photo)
+    {
+        return await mongoService.UploadPhotoAsync(photo);
     }
 }

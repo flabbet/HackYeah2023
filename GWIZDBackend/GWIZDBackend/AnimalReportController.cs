@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 
 namespace GWIZDBackend;
 
@@ -13,10 +14,12 @@ public class AnimalReportController : Controller
         _reportService = new AnimalReportService(mongoDBService);
     }
 
-    [HttpPost]
+    [HttpPut]
     [Route("animal-report")]
-    public async Task<IActionResult> Post([FromBody] AnimalReport animalReport)
+    public async Task<IActionResult> Post([FromBody] AnimalReport animalReport, [FromForm] IFormFile photo)
     {
+        ObjectId photoId = await _reportService.UploadPhoto(photo);
+        animalReport.PhotoId = photoId;
         await _reportService.SendAnimalReport(animalReport);
         return Ok();
     }
