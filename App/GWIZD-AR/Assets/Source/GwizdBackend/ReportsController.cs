@@ -67,6 +67,9 @@ namespace Source.GwizdBackend
                         arcGisComponent.Position = new Esri.GameEngine.Geometry.ArcGISPoint(geo.x, geo.y, geo.z);
                         arcGisComponent.GetComponent<HPTransform>().LocalScale = new float3(40, 40, 40);
                         arcGisComponent.transform.GetChild(0).transform.position += new Vector3(0, 0.7f, 0);
+                        Animal animal = arcGisComponent.gameObject.AddComponent<Animal>();
+                        animal.AnimalData = animalData;
+                        animal.AnimalReport = report;
                         Instantiate(discPrefab, arcGisComponent.transform.GetChild(0));
                     _activeReportObjects.Add(animalObject);
                 };
