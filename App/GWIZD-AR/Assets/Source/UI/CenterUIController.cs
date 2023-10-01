@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class CenterUIController : MonoBehaviour
 {
     private UIDocument document;
-    private Button animalBtn;
+    //private Button animalBtn;
     private Button backBtn;
     public VisualTreeAsset alertAsset;
     
@@ -21,11 +21,11 @@ public class CenterUIController : MonoBehaviour
             document.visualTreeAsset = asset;
             backBtn = document.rootVisualElement.Q<Button>("BackButton");
             backBtn.clicked += OnBackButtonClicked;
-            if(alertAsset == asset)
-            {
-                animalBtn = document.rootVisualElement.Q<Button>("AnimalBtn");
-                animalBtn.clicked += Animal_Btn_Clicked;
-            }
+            //if(alertAsset == asset)
+            //{
+                //animalBtn = document.rootVisualElement.Q<Button>("AnimalBtn");
+                //animalBtn.clicked += Animal_Btn_Clicked;
+            //}
         }
         else
         {
