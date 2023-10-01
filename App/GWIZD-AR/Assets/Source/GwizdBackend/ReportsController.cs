@@ -10,6 +10,7 @@ namespace Source.GwizdBackend
     public class ReportsController : MonoBehaviour
     {
         public AnimalReport[] ActiveReports { get; set; }
+        public GameObject discPrefab;
         private ArcGISMapComponent _mapComponent;
         private List<GameObject> _activeReportObjects = new List<GameObject>();
 
@@ -49,7 +50,8 @@ namespace Source.GwizdBackend
                         var arcGisComponent = animalObject.AddComponent<ArcGISLocationComponent>();
                         arcGisComponent.Position = new Esri.GameEngine.Geometry.ArcGISPoint(geo.x, geo.y, geo.z);
                         arcGisComponent.GetComponent<HPTransform>().LocalScale = new float3(40, 40, 40);
-                        arcGisComponent.transform.GetChild(0).transform.position += new Vector3(0, 13, 0);
+                        arcGisComponent.transform.GetChild(0).transform.position += new Vector3(0, 0.7f, 0);
+                        Instantiate(discPrefab, arcGisComponent.transform.GetChild(0));
                     _activeReportObjects.Add(animalObject);
                 };
             }
