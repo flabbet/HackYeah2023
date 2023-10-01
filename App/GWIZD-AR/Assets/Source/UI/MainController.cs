@@ -2,6 +2,7 @@ using Mono.Cecil.Cil;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Source.UI;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -51,10 +52,16 @@ public class MainController : MonoBehaviour
     private void AlertBtnOnClick(ClickEvent evt)
     {
         centerUIController.SetDocument(alertDocument);
+        centerUIController.gameObject.AddComponent<AnimalPickerUI>();
     }
 
     private void MapBtnOnClick(ClickEvent evt)
     {
         centerUIController.SetDocument(null);
+        AnimalPickerUI animalPickerUI = centerUIController.gameObject.GetComponent<AnimalPickerUI>();
+        if(animalPickerUI != null)
+        {
+            Destroy(animalPickerUI);
+        }
     }
 }

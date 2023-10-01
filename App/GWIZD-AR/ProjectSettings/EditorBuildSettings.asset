@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BlankAR.unity
     guid: 6bdce89659816455b9f906fc62d19910
   - enabled: 1
-    path: Assets/Scenes/PetAlert.unity
-    guid: 6bad45bb48b3b6146b5ab9d3d46880ea
-  - enabled: 1
     path: Assets/Scenes/AnimalAlert.unity
     guid: 8ba7c07fb38fce243bfdec15afd56f66
   m_configObjects:

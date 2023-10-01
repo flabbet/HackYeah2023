@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Source.GwizdBackend;
+using Source.UI;
 using UnityEngine;
 using UnityEngine.Android;
 using UnityEngine.SceneManagement;
@@ -41,7 +42,7 @@ public class PhotoController : MonoBehaviour
         byte[] photo = tex.EncodeToJPG(75);
 
         AnimalReport animalReport = new AnimalReport();
-        animalReport.AnimalId = "test";
+        animalReport.AnimalId = AnimalPickerUI.NextAnimalId;
         yield return GetLocation(animalReport);
 
         animalReport.PhotoBase64 = Convert.ToBase64String(photo);
