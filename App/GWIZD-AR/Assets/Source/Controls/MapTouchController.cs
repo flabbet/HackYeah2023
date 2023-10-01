@@ -12,6 +12,7 @@ namespace Source.Controls
         private ArcGISMapComponent _mapComponent;
         private ArcGISLocationComponent _locationComponent;
         private HPTransform _transform;
+        private GameObject eventSystem;
 
         private void Awake()
         {
