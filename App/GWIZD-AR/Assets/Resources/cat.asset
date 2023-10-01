@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd9c87f897a497ca756a89ed10d9a65, type: 3}
+  m_Name: cat
+  m_EditorClassIdentifier: 
+  animalName: Kot
+  associatedPrefab: {fileID: 6350196930765758044, guid: b3feced3d7d243a4ca9d4000258d5797,
+    type: 3}
+  animalId: cat
