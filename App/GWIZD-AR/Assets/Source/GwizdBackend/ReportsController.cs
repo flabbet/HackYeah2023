@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Esri.ArcGISMapsSDK.Components;
 using Esri.HPFramework;
@@ -14,10 +15,25 @@ namespace Source.GwizdBackend
         private ArcGISMapComponent _mapComponent;
         private List<GameObject> _activeReportObjects = new List<GameObject>();
 
+        private Coroutine _fetchDbCoroutine;
         private void Start()
         {
             _mapComponent = GetComponent<ArcGISMapComponent>();
-            FetchDb();
+            _fetchDbCoroutine = StartCoroutine(FetchDbCoroutine());
+        }
+
+        private IEnumerator FetchDbCoroutine()
+        {
+            while (true)
+            {
+                FetchDb();
+                yield return new WaitForSeconds(5);
+            }
+        }
+
+        private void OnDestroy()
+        {
+            StopCoroutine(_fetchDbCoroutine);
         }
 
         private void FetchDb()

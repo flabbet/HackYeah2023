@@ -9,10 +9,14 @@ namespace Source.Controls
 {
     public class MapTouchController : MonoBehaviour
     {
+        private ArcGISMapComponent _mapComponent;
         private ArcGISLocationComponent _locationComponent;
+        private HPTransform _transform;
 
         private void Awake()
         {
+            _mapComponent = transform.parent.GetComponent<ArcGISMapComponent>();
+            _transform = GetComponent<HPTransform>();
             _locationComponent = GetComponent<ArcGISLocationComponent>();
         }
 
@@ -22,13 +26,13 @@ namespace Source.Controls
             {
                 if (touch.phase == TouchPhase.Moved)
                 {
+                    var pos = _mapComponent.View.GeographicToWorld(
+                        new ArcGISPoint(_locationComponent.Position.X,
+                            _locationComponent.Position.Y, _locationComponent.Position.Z));
+                       pos.x += touch.deltaPosition.x * 0.1f;
+                       pos.y += -touch.deltaPosition.y * 0.1f;
 
-                    _locationComponent.Position = new ArcGISPoint(
-                        _locationComponent.Position.X + touch.deltaPosition.x * 10f,
-                        _locationComponent.Position.Y + touch.deltaPosition.y * 10f,
-                        _locationComponent.Position.Z);
-
-                    _locationComponent.SyncPositionWithHPTransform();
+                       _transform.UniversePosition = pos;
                 }
             }
         }
