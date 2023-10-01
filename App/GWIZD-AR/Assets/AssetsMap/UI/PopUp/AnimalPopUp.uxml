@@ -1,9 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
->
-    
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AssetsMap/UI/Main/Notifications/Notifications.uss?fileID=7433441132597879392&amp;guid=feab19e74999f044ca0d0328968cf1ce&amp;type=3#Notifications" />
+    <ui:VisualElement style="width: 100%; height: 80%; background-color: rgba(0, 0, 0, 0.16); align-items: center; justify-content: center;">
+        <ui:VisualElement name="PopUp" style="width: 60%;">
+            <ui:VisualElement name="ListItem" class="ListItem" style="width: 100%; align-items: center; justify-content: center; height: 80px; background-color: rgb(255, 255, 255); padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                <ui:VisualElement name="ListItemInfo" style="width: 80%; justify-content: space-around; align-items: flex-start; -unity-text-align: middle-center; height: 100%;">
+                    <ui:Label tabindex="-1" text="Dzik" display-tooltip-when-elided="true" name="AnimalName" style="font-size: 15px; -unity-font-style: bold;" />
+                    <ui:VisualElement style="white-space: normal; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="Dystans:" display-tooltip-when-elided="true" style="font-size: 8px;" />
+                        <ui:Label tabindex="-1" text="Około Kilometra" display-tooltip-when-elided="true" name="AnimalDistance" style="font-size: 8px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Image" class="Image" style="-unity-background-scale-mode: scale-to-fit; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; width: 50px; height: 50px; justify-content: flex-start; background-image: none;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
