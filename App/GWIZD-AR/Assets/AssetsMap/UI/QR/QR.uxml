@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AssetsMap/UI/QR/QR.uss?fileID=7433441132597879392&amp;guid=c9b77c4ed4ad9354ead079105366bac3&amp;type=3#QR" />
+    <ui:VisualElement style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; justify-content: space-between; align-items: center;">
+        <ui:VisualElement name="TopBar" style="flex-wrap: nowrap; flex-direction: row; width: 100%; align-items: center;">
+            <ui:VisualElement name="BackIcon" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-back-50.png?fileID=2800000&amp;guid=00405778a066bf6488d8383d9b174a7f&amp;type=3#icons8-back-50&apos;); width: 10px; height: 10px; font-size: 12px; justify-content: flex-start; align-items: center;" />
+            <ui:Button text="POWRÓT" display-tooltip-when-elided="true" name="BackButton" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-color: rgba(228, 228, 228, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; font-size: 7px;" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="Zeskauj kod QR, a my poszukamy odpowiadającego mu zgłoszenia" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: bold; white-space: normal; font-size: 12px;" />
+        <ui:VisualElement name="ImageContainer" style="flex-direction: column; justify-content: center; align-items: center;">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/image%205.png?fileID=2800000&amp;guid=7c9e5d3bc030f5c41bc10a0108a0de7a&amp;type=3#image 5&apos;); width: 150px; height: 150px; -unity-background-scale-mode: scale-and-crop;" />
+        </ui:VisualElement>
+        <ui:Button text="Skanuj Kod" display-tooltip-when-elided="true" name="QRBtn" class="Button" style="background-color: rgb(80, 142, 54); margin-top: 0; margin-bottom: 0;" />
+        <ui:Button text="Zwierzak nie ma kodu QR" display-tooltip-when-elided="true" name="NoQRBtn" class="Button" style="background-color: rgb(255, 0, 53); margin-top: 0; margin-bottom: 50px;" />
+    </ui:VisualElement>
+</ui:UXML>

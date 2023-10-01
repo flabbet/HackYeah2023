@@ -1,0 +1,27 @@
+.ListItem {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-left-color: rgba(0, 0, 0, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-top-color: rgba(0, 0, 0, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.Image {
+    width: 100px;
+    height: 100px;
+    background-image: url('project://database/Assets/AssetsMap/Images/deer_3_4_angle.png?fileID=2800000&guid=691dacc52f29db5498397a4796129f41&type=3#deer_3_4_angle');
+    -unity-background-scale-mode: scale-to-fit;
+}

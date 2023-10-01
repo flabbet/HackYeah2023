@@ -1,52 +1,52 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/ChooseAnimal/ChooseAnimal.uss?fileID=7433441132597879392&amp;guid=302e2cd0be0cf0e48a822fe685012e12&amp;type=3#ChooseAnimal" />
+    <Style src="project://database/Assets/AssetsMap/UI/ChooseAnimal/ChooseAnimal.uss?fileID=7433441132597879392&amp;guid=302e2cd0be0cf0e48a822fe685012e12&amp;type=3#ChooseAnimal" />
     <ui:VisualElement style="width: 100%; height: 100%; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px; background-color: rgb(255, 255, 255); justify-content: space-between; min-height: auto; min-width: auto;">
         <ui:VisualElement name="TopBar" style="flex-wrap: nowrap; flex-direction: row;">
-            <ui:VisualElement name="BackIcon" style="background-image: url(&apos;project://database/Assets/Images/Icons/Icons8/icons8-back-50.png?fileID=2800000&amp;guid=00405778a066bf6488d8383d9b174a7f&amp;type=3#icons8-back-50&apos;); width: 10px; height: 10px; font-size: 12px;" />
+            <ui:VisualElement name="BackIcon" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-back-50.png?fileID=2800000&amp;guid=00405778a066bf6488d8383d9b174a7f&amp;type=3#icons8-back-50&apos;); width: 10px; height: 10px; font-size: 12px;" />
             <ui:Label tabindex="-1" text="POWRÓT" display-tooltip-when-elided="true" name="BackText" style="font-size: 7px; -unity-text-align: middle-center;" />
         </ui:VisualElement>
-        <ui:Label tabindex="-1" text="Jakie zwierze chcesz zgłosić!" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 13px; -unity-font-style: bold;" />
+        <ui:Label tabindex="-1" text="Jakie zwierze chcesz zgłosić?" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; font-size: 13px; -unity-font-style: bold;" />
         <ui:VisualElement name="OptionsContainer">
             <ui:VisualElement name="AnimalRow" class="AnimalRow">
                 <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
                     <ui:VisualElement name="AnimalItem" class="AnimalItem">
-                        <ui:VisualElement name="AnimalImage" />
+                        <ui:VisualElement name="AnimalImage" class="AnimalImage" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/deer_3_4_angle.png?fileID=2800000&amp;guid=691dacc52f29db5498397a4796129f41&amp;type=3#deer_3_4_angle&apos;);" />
                     </ui:VisualElement>
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                    <ui:Label tabindex="-1" text="Jeleń" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
                 </ui:VisualElement>
                 <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
                     <ui:VisualElement name="AnimalItem" class="AnimalItem">
-                        <ui:VisualElement name="AnimalImage" />
+                        <ui:VisualElement name="AnimalImage" class="AnimalImage" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/moose_3_4_angle.png?fileID=2800000&amp;guid=c709051924eaab24d894b51fab2b6774&amp;type=3#moose_3_4_angle&apos;);" />
                     </ui:VisualElement>
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
-                </ui:VisualElement>
-            </ui:VisualElement>
-            <ui:VisualElement name="AnimalRow" class="AnimalRow">
-                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
-                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
-                        <ui:VisualElement name="AnimalImage" />
-                    </ui:VisualElement>
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
-                </ui:VisualElement>
-                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
-                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
-                        <ui:VisualElement name="AnimalImage" />
-                    </ui:VisualElement>
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                    <ui:Label tabindex="-1" text="Łoś" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="AnimalRow" class="AnimalRow">
                 <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
                     <ui:VisualElement name="AnimalItem" class="AnimalItem">
-                        <ui:VisualElement name="AnimalImage" />
+                        <ui:VisualElement name="AnimalImage" class="AnimalImage" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/dog.png?fileID=2800000&amp;guid=ce5b1f241455e514c84e828e5fd3c801&amp;type=3#dog&apos;); -unity-background-scale-mode: scale-and-crop;" />
                     </ui:VisualElement>
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                    <ui:Label tabindex="-1" text="Pies" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
                 </ui:VisualElement>
                 <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
                     <ui:VisualElement name="AnimalItem" class="AnimalItem">
-                        <ui:VisualElement name="AnimalImage" />
+                        <ui:VisualElement name="AnimalImage" class="AnimalImage" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/cat.png?fileID=2800000&amp;guid=b3a69a71ecf097741b0f5a26a4abd6c9&amp;type=3#cat&apos;);" />
                     </ui:VisualElement>
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                    <ui:Label tabindex="-1" text="Kot" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="AnimalRow" class="AnimalRow">
+                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
+                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
+                        <ui:VisualElement name="AnimalImage" class="AnimalImage" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/racoon_3_4_angle.png?fileID=2800000&amp;guid=c4255ff292a672e47827b863a37a48d3&amp;type=3#racoon_3_4_angle&apos;);" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Szop Pracz" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AnimalContainer" class="AnimalContainer">
+                    <ui:VisualElement name="AnimalItem" class="AnimalItem">
+                        <ui:VisualElement name="AnimalImage" class="AnimalImage" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/boar_3_4_angle.png?fileID=2800000&amp;guid=ce20b50730cf49c4eab0d2425567a688&amp;type=3#boar_3_4_angle&apos;);" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="Dzik" display-tooltip-when-elided="true" name="AnimalLabel" class="AnimalLabel" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

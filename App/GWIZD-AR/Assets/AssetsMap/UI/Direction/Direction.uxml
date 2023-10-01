@@ -1,14 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/AssetsMap/UI/Main/AddAlert/AddAlert.uss?fileID=7433441132597879392&amp;guid=dc407716a80b9bb4a83427465cb00e86&amp;type=3#AddAlert" />
-    <ui:VisualElement style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; background-color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+    <Style src="project://database/Assets/AssetsMap/UI/Direction/Direction.uss?fileID=7433441132597879392&amp;guid=229842918f07b564fa0bf36940c61f3d&amp;type=3#Direction" />
+    <ui:VisualElement style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; justify-content: space-between; align-items: center;">
         <ui:VisualElement name="TopBar" style="flex-wrap: nowrap; flex-direction: row; width: 100%; align-items: center;">
             <ui:VisualElement name="BackIcon" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-back-50.png?fileID=2800000&amp;guid=00405778a066bf6488d8383d9b174a7f&amp;type=3#icons8-back-50&apos;); width: 10px; height: 10px; font-size: 12px; justify-content: flex-start; align-items: center;" />
             <ui:Button text="POWRÓT" display-tooltip-when-elided="true" name="BackButton" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-color: rgba(228, 228, 228, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; font-size: 7px;" />
         </ui:VisualElement>
-        <ui:Label tabindex="-1" text="Co chcesz dziś zgłosić" display-tooltip-when-elided="true" style="font-size: 15px; -unity-font-style: bold; justify-content: flex-end; margin-top: 0; height: 30%; -unity-text-align: lower-left;" />
-        <ui:VisualElement style="width: 100%; justify-content: center; align-items: center; height: auto;">
-            <ui:Button text="Widzę zwierzę" display-tooltip-when-elided="true" name="AnimalBtn" class="Button" style="font-size: 15px; background-color: rgb(80, 142, 54);" />
-            <ui:Button text="Mój Pupil się zgubił" display-tooltip-when-elided="true" name="PetBtn" class="Button" style="font-size: 15px; background-color: rgb(126, 217, 87);" />
-        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="W którą stronę kierowało się zwierzę" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: bold; white-space: normal; font-size: 12px; margin-bottom: 10px; margin-top: 10px;" />
+        <ui:Button text="Nie wiem/ nie mogę pomóc" display-tooltip-when-elided="true" name="NoIdeaBtn" class="Button" style="background-color: rgb(255, 0, 53); margin-top: 0; margin-bottom: 0;" />
+        <ui:Button text="POTWIERDŹ KIERUNEK" display-tooltip-when-elided="true" name="SubmitDirectionBtn" class="Button" style="background-color: rgb(80, 142, 54); margin-top: 0; margin-bottom: 0;" />
     </ui:VisualElement>
 </ui:UXML>

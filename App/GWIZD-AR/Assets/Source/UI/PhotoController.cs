@@ -3,6 +3,7 @@ using System.Collections;
 using Source.GwizdBackend;
 using UnityEngine;
 using UnityEngine.Android;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PhotoController : MonoBehaviour
@@ -89,6 +90,8 @@ public class PhotoController : MonoBehaviour
 
         // Stops the location service if there is no need to query location updates continuously.
         Input.location.Stop();
+
+        SceneManager.LoadScene(1);
     }
 
     private void ToggleUI(bool value)

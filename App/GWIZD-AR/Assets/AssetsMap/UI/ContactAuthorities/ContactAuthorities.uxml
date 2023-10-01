@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AssetsMap/UI/ContactAuthorities/ContactAuthorities.uss?fileID=7433441132597879392&amp;guid=f4d033c8b8878ef44a20d83ffcab367c&amp;type=3#ContactAuthorities" />
+    <ui:VisualElement style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; justify-content: flex-start; align-items: center;">
+        <ui:VisualElement name="TopBar" style="flex-wrap: nowrap; flex-direction: row; width: 100%; align-items: center;">
+            <ui:VisualElement name="BackIcon" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-back-50.png?fileID=2800000&amp;guid=00405778a066bf6488d8383d9b174a7f&amp;type=3#icons8-back-50&apos;); width: 10px; height: 10px; font-size: 12px; justify-content: flex-start; align-items: center;" />
+            <ui:Button text="POWRÓT" display-tooltip-when-elided="true" name="BackButton" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-color: rgba(228, 228, 228, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; font-size: 7px;" />
+        </ui:VisualElement>
+        <ui:ScrollView vertical-scroller-visibility="Hidden">
+            <ui:Label tabindex="-1" text="Jeśli zwierzak nie ma kodu QR, powiadom odpowiednie służby" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: bold; white-space: normal; font-size: 12px; margin-bottom: 10px; margin-top: 10px;" />
+            <ui:VisualElement name="ListItem" class="ListItem">
+                <ui:VisualElement name="ListItemInfo" class="ListItemInfo">
+                    <ui:Label tabindex="-1" text="Anima Patrol" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: bold; font-size: 14px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
+                    <ui:Label tabindex="-1" text="Straży miejskiej" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: normal; font-size: 10px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
+                </ui:VisualElement>
+                <ui:Button text="986" display-tooltip-when-elided="true" name="AnimaBtn" style="width: auto; height: 30px; background-color: rgba(80, 142, 54, 255); -unity-font-style: bold; color: rgba(255, 255, 255, 255); padding-left: 10px; padding-right: 10px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ListItem" class="ListItem">
+                <ui:VisualElement name="ListItemInfo" class="ListItemInfo">
+                    <ui:Label tabindex="-1" text="Policja" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: bold; font-size: 14px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
+                    <ui:Label tabindex="-1" text="jeśli zachodzi podejrzenie dokonania przestępstwa wobec zwierząt" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: normal; font-size: 10px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
+                </ui:VisualElement>
+                <ui:Button text="997" display-tooltip-when-elided="true" name="PoliceBtn" style="width: auto; height: 30px; background-color: rgb(80, 142, 54); -unity-font-style: bold; color: rgb(255, 255, 255); justify-content: flex-start; padding-left: 10px; padding-right: 10px; flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="Jeśli zwierzak jest agresywny, &#10;w niebezpieczeństwie lub podejrzewasz jego zaniedbanie" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: bold; white-space: normal; font-size: 12px; margin-bottom: 10px; margin-top: 10px; color: rgba(255, 0, 0, 255);" />
+            <ui:VisualElement name="ListItem" class="ListItem">
+                <ui:VisualElement name="ListItemInfo" class="ListItemInfo">
+                    <ui:Label tabindex="-1" text="Straż Pożarna" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: bold; font-size: 14px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
+                    <ui:Label tabindex="-1" text="jeśli zwierzę, które znajdziesz jest w pułapce" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: normal; font-size: 10px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
+                </ui:VisualElement>
+                <ui:Button text="998" display-tooltip-when-elided="true" name="FirefightersBtn" style="width: auto; height: 30px; background-color: rgb(80, 142, 54); -unity-font-style: bold; color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ListItem" class="ListItem">
+                <ui:VisualElement name="ListItemInfo" class="ListItemInfo">
+                    <ui:Label tabindex="-1" text="Straż dla Zwierząt w Polsce" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: bold; font-size: 14px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
+                    <ui:Label tabindex="-1" text="zaniedbanie zwierzęcia przez właściciela" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: normal; font-size: 10px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
+                </ui:VisualElement>
+                <ui:Button text="(022) 353-50-60" display-tooltip-when-elided="true" name="AnimPolBtn" style="width: auto; height: 30px; background-color: rgb(80, 142, 54); -unity-font-style: bold; color: rgb(255, 255, 255); padding-right: 10px; padding-left: 10px;" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>
