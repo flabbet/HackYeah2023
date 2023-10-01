@@ -12,22 +12,22 @@
 // USA
 //
 // email: legal@esri.com
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Esri.ArcGISMapsSDK.Components;
+using Esri.ArcGISMapsSDK.Samples.Components;
 using Esri.ArcGISMapsSDK.Utils.Math;
 using Esri.GameEngine.Geometry;
 using Esri.GameEngine.View;
 using Esri.HPFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
-#if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
-#endif
 
-namespace Esri.ArcGISMapsSDK.Samples.Components
+namespace Source.Controls
 {
 	[DisallowMultipleComponent]
 	[RequireComponent(typeof(HPTransform))]
@@ -302,7 +302,7 @@ namespace Esri.ArcGISMapsSDK.Samples.Components
 			var cameraPosition = Position;
 			var cameraRotation = Rotation;
 
-			if (mapComponent.MapType == GameEngine.Map.ArcGISMapType.Global)
+			if (mapComponent.MapType == Esri.GameEngine.Map.ArcGISMapType.Global)
 			{
 				var spheroidData = mapComponent.View.SpatialReference.SpheroidData;
 				var nextArcGISPoint = mapComponent.View.WorldToGeographic(movDir + cameraPosition);
@@ -355,11 +355,11 @@ namespace Esri.ArcGISMapsSDK.Samples.Components
 				{
 					if (deltaMouse != Vector3.zero)
 					{
-						if (mapComponent.MapType == GameEngine.Map.ArcGISMapType.Global)
+						if (mapComponent.MapType == Esri.GameEngine.Map.ArcGISMapType.Global)
 						{
 							GlobalDragging(ref cartesianPosition, ref cartesianRotation);
 						}
-						else if (mapComponent.MapType == GameEngine.Map.ArcGISMapType.Local)
+						else if (mapComponent.MapType == Esri.GameEngine.Map.ArcGISMapType.Local)
 						{
 							LocalDragging(ref cartesianPosition);
 						}
