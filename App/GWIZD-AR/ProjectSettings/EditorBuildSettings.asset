@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 2a207e943a4258d4ba7aad84cc382bec
   - enabled: 1
-    path: Assets/AssetsMap/MapScene.unity
+    path: Assets/Scenes/MapScene.unity
     guid: de89faf4992518d4881831c8185cfe74
   - enabled: 1
     path: Assets/Scenes/BlankAR.unity

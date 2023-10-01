@@ -1,21 +1,21 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Main/ss.uss?fileID=7433441132597879392&amp;guid=54c67d34524869e47a75ca798b13a7d3&amp;type=3#ss" />
+    <Style src="project://database/Assets/AssetsMap/UI/Main/ss.uss?fileID=7433441132597879392&amp;guid=54c67d34524869e47a75ca798b13a7d3&amp;type=3#ss" />
     <ui:VisualElement style="justify-content: space-between; width: 100%; height: 100%;">
-        <ui:VisualElement name="TopBar" class="TopBar" style="flex-direction: row; justify-content: space-between; background-color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
-            <ui:VisualElement name="AppIcon" style="background-image: url(&apos;project://database/Assets/Images/gwIZD.png?fileID=2800000&amp;guid=b3cf6add2bd206749a14d886835056fa&amp;type=3#gwIZD&apos;); width: 45px; height: 45px;" />
-            <ui:VisualElement name="AlertIcon" style="background-image: url(&apos;project://database/Assets/Images/Icons/Alarm.png?fileID=2800000&amp;guid=b1cf6bf61be3864409072861c091f7a7&amp;type=3#Alarm&apos;); -unity-background-image-tint-color: rgb(255, 255, 255); width: 45px; flex-direction: column; flex-wrap: nowrap; -unity-background-scale-mode: scale-to-fit; height: 45px; background-color: rgb(255, 255, 255);" />
+        <ui:VisualElement name="TopBar" class="TopBar" style="flex-direction: row; justify-content: space-between; background-color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; -unity-text-align: middle-left; align-items: center;">
+            <ui:VisualElement name="AppIcon" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/gwIZD.png?fileID=2800000&amp;guid=b3cf6add2bd206749a14d886835056fa&amp;type=3#gwIZD&apos;); width: 45px; height: 45px; -unity-background-scale-mode: scale-and-crop;" />
+            <ui:VisualElement name="NotificationBtn" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-notification-96.png?fileID=2800000&amp;guid=bfdc2f53f63e43447838595a897838a3&amp;type=3#icons8-notification-96&apos;); -unity-background-image-tint-color: rgb(255, 255, 255); width: 25px; flex-direction: column; flex-wrap: nowrap; -unity-background-scale-mode: scale-and-crop; height: 25px; background-color: rgb(255, 255, 255);" />
         </ui:VisualElement>
         <ui:VisualElement name="BottomBar" class="BottomBar" style="flex-wrap: nowrap; flex-direction: row; justify-content: space-between; align-items: center; background-color: rgb(255, 255, 255); height: auto; max-height: 100px; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
             <ui:VisualElement name="MapBtn" style="justify-content: center; align-items: center;">
-                <ui:VisualElement class="NavButton" style="width: 25px; background-image: url(&apos;project://database/Assets/Images/Icons/Address.png?fileID=2800000&amp;guid=6e7269af1a02b62488cd29090302677b&amp;type=3#Address&apos;); height: 25px;" />
+                <ui:VisualElement class="NavButton" style="width: 25px; background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-address-90.png?fileID=2800000&amp;guid=6e3bbcf7f77f75a43a00d8d767a3aca6&amp;type=3#icons8-address-90&apos;); height: 25px; -unity-background-scale-mode: scale-and-crop;" />
                 <ui:Label tabindex="-1" text="mapa" display-tooltip-when-elided="true" style="font-size: 8px;" />
             </ui:VisualElement>
             <ui:VisualElement name="AlertBtn" style="align-items: center; justify-content: center;">
-                <ui:VisualElement class="NavButton" style="width: 25px; background-image: url(&apos;project://database/Assets/Images/Icons/Error.png?fileID=2800000&amp;guid=aa4a08b86d032da42b3324607434f838&amp;type=3#Error&apos;); height: 25px;" />
+                <ui:VisualElement class="NavButton" style="width: 25px; background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-alert-100.png?fileID=2800000&amp;guid=b86f0313e15a2824190bc2445ff1513f&amp;type=3#icons8-alert-100&apos;); height: 25px; -unity-background-scale-mode: scale-and-crop;" />
                 <ui:Label tabindex="-1" text="zgłoś" display-tooltip-when-elided="true" style="font-size: 8px;" />
             </ui:VisualElement>
             <ui:VisualElement name="ProfileBtn" style="justify-content: center; align-items: center;">
-                <ui:VisualElement class="NavButton" style="width: 25px; background-image: url(&apos;project://database/Assets/Images/Icons/Male%20User.png?fileID=2800000&amp;guid=c8034b59882275443b294f8b246a2c44&amp;type=3#Male User&apos;); height: 25px;" />
+                <ui:VisualElement class="NavButton" style="width: 25px; background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-male-user-96.png?fileID=2800000&amp;guid=2404971f1b1422e46a648ddefde3e9e0&amp;type=3#icons8-male-user-96&apos;); height: 25px; -unity-background-scale-mode: scale-and-crop;" />
                 <ui:Label tabindex="-1" text="profil" display-tooltip-when-elided="true" style="height: auto; font-size: 8px;" />
             </ui:VisualElement>
         </ui:VisualElement>

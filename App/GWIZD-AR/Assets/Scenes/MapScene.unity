@@ -626,6 +626,8 @@ MonoBehaviour:
     type: 3}
   profileDocument: {fileID: 9197481963319205126, guid: 12a720c984612c7408952cf178abff2e,
     type: 3}
+  notificationDocument: {fileID: 9197481963319205126, guid: 3ea03158ab84ea346ad8896f3fc222a0,
+    type: 3}
 --- !u!1 &1772417798
 GameObject:
   m_ObjectHideFlags: 0

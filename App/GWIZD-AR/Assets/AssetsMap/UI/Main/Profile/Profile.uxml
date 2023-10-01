@@ -14,7 +14,7 @@
             <ui:VisualElement name="ListItemInfo" style="width: 80%; justify-content: center; align-items: flex-start;">
                 <ui:Label tabindex="-1" text="09.30.2023" display-tooltip-when-elided="true" style="font-size: 6px; height: auto; -unity-text-align: lower-left;" />
                 <ui:Label tabindex="-1" text="Zgłoszenie dzikiego zwierzęcia" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: bold; font-size: 12px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: row;" />
-                <ui:VisualElement style="width: 100%; height: auto; flex-direction: row;">
+                <ui:VisualElement style="width: 100%; height: auto; flex-direction: row; -unity-text-align: upper-left;">
                     <ui:Label tabindex="-1" text="Id zgłoszenia: 12345678910" display-tooltip-when-elided="true" style="font-size: 5px; width: 50%;" />
                     <ui:Button text="USUŃ ZGŁOSZENIE" display-tooltip-when-elided="true" name="DeleteAlertBtn" style="background-color: rgba(228, 228, 228, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; font-size: 7px; width: 40%; -unity-text-align: upper-left; color: rgb(255, 0, 0); -unity-font-style: bold; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
                 </ui:VisualElement>

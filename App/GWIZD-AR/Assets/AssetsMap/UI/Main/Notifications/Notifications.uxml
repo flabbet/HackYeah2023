@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AssetsMap/UI/Main/Notifications/Notifications.uss?fileID=7433441132597879392&amp;guid=feab19e74999f044ca0d0328968cf1ce&amp;type=3#Notifications" />
+    <ui:VisualElement style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; background-color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; margin-top: 0;">
+        <ui:VisualElement name="TopBar" style="flex-wrap: nowrap; flex-direction: row; width: 100%; align-items: center;">
+            <ui:VisualElement name="BackIcon" style="background-image: url(&apos;project://database/Assets/AssetsMap/Images/Icons/Icons8/icons8-back-50.png?fileID=2800000&amp;guid=00405778a066bf6488d8383d9b174a7f&amp;type=3#icons8-back-50&apos;); width: 10px; height: 10px; font-size: 12px; justify-content: flex-start; align-items: center;" />
+            <ui:Button text="POWRÓT" display-tooltip-when-elided="true" name="BackButton" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-color: rgba(228, 228, 228, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; font-size: 7px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ListItem" class="ListItem" style="width: 100%; align-items: center; justify-content: center; height: 80px;">
+            <ui:VisualElement name="Image" class="Image" style="-unity-background-scale-mode: scale-to-fit; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; width: 50px; height: 50px; justify-content: flex-start; background-image: url(&apos;project://database/Assets/AssetsMap/Images/boar_3_4_angle.png?fileID=2800000&amp;guid=ce20b50730cf49c4eab0d2425567a688&amp;type=3#boar_3_4_angle&apos;);" />
+            <ui:VisualElement name="ListItemInfo" style="width: 80%; justify-content: flex-start; align-items: flex-start; -unity-text-align: middle-center;">
+                <ui:Label tabindex="-1" text="Uwaga!" display-tooltip-when-elided="true" style="font-size: 10px; height: auto; -unity-text-align: lower-left; -unity-font-style: bold; color: rgb(255, 0, 0);" />
+                <ui:Label tabindex="-1" text="W POBLIŻU ZNAJDUJE SIĘ DZIK!" display-tooltip-when-elided="true" style="justify-content: center; -unity-font-style: bold; font-size: 12px; white-space: normal; height: auto; align-items: center; -unity-text-align: middle-left; flex-direction: column;" />
+                <ui:VisualElement style="width: 100%; height: auto; flex-direction: row; -unity-text-align: upper-left;">
+                    <ui:Label tabindex="-1" text="Id zgłoszenia: 12345678910" display-tooltip-when-elided="true" style="font-size: 5px; width: 50%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
