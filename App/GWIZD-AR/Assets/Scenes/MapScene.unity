@@ -229,7 +229,7 @@ MonoBehaviour:
   - Name: 
     Type: 0
     Source: https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer
-    IsEnabled: 1
+    IsEnabled: 0
     Authentication:
       ConfigurationIndex: -1
   enableExtent: 1
@@ -317,6 +317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f349bb8cff442168bc416c254de9e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  discPrefab: {fileID: 1807008399904349165, guid: 12d6a320e46ffff49ac12dc72327cf0e,
+    type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +441,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858871110}
-  m_LocalRotation: {x: 0.707107, y: 4.8039167e-10, z: 0.00000002121206, w: 0.7071066}
+  m_LocalRotation: {x: 0.5735767, y: -0.000000015909821, z: 0.0000000025051556, w: 0.81915194}
   m_LocalPosition: {x: -0.0000045068605, y: 1000, z: -0.0000075378775}
   m_LocalScale: {x: 1, y: 1, z: 0.9999999}
   m_ConstrainProportionsScale: 0
@@ -466,7 +468,7 @@ MonoBehaviour:
     SRWkid: 4326
   rotation:
     Heading: 0
-    Pitch: 0
+    Pitch: 20
     Roll: 0
 --- !u!114 &858871113
 MonoBehaviour:
@@ -549,10 +551,10 @@ MonoBehaviour:
     z: 1430212.8927817263
   m_LocalRotation:
     value:
-      x: 0.24039163
-      y: -0.74437493
-      z: 0.34491587
-      w: 0.5187975
+      x: 0.14665128
+      y: -0.7929602
+      z: 0.21041647
+      w: 0.5526594
   m_LocalScale:
     x: 1
     y: 1
