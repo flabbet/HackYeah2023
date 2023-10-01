@@ -427,7 +427,6 @@ GameObject:
   - component: {fileID: 858871113}
   - component: {fileID: 858871112}
   - component: {fileID: 858871116}
-  - component: {fileID: 858871117}
   m_Layer: 0
   m_Name: ArcGISCamera
   m_TagString: MainCamera
@@ -567,7 +566,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858871110}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 706333b7309497842bdba67970a507f8, type: 3}
   m_Name: 
@@ -575,18 +574,6 @@ MonoBehaviour:
   MaxSpeed: 153846
   MinSpeed: 75
   IgnoreUI: 0
---- !u!114 &858871117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858871110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6e68854e4d84e80b586f9eb94c063d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1335276288
 GameObject:
   m_ObjectHideFlags: 0
