@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd9c87f897a497ca756a89ed10d9a65, type: 3}
   m_Name: boar
   m_EditorClassIdentifier: 
-  animalName: Boar
+  animalName: Dzik
   associatedPrefab: {fileID: 1838707975225329487, guid: 1483c334a9b3b3944b3cd6cc551dfd66,
     type: 3}
   animalId: boar
